@@ -1,10 +1,7 @@
 import { createStackNavigator, createAppContainer, createBottomTabNavigator } from 'react-navigation';
-import firebase from 'react-native-firebase';
-
 import Home from './src/Home';
 import Settings from './src/Settings';
 import Profile from './src/Profile';
-
 
 const SettingsStack = createStackNavigator({
   Settings: {
