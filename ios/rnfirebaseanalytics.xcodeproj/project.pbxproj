@@ -20,6 +20,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* rnfirebaseanalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnfirebaseanalyticsTests.m */; };
 		6FACB5D9024EF06E20C12E74 /* libPods-rnfirebaseanalyticsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FB5317AF51DAC00AE3ED9 /* libPods-rnfirebaseanalyticsTests.a */; };
+		995BAAF622EEECFE0078E7D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 995BAAF522EEECFE0078E7D7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		7B750A5338BFCFD66311BF70 /* Pods-rnfirebaseanalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfirebaseanalytics.release.xcconfig"; path = "Target Support Files/Pods-rnfirebaseanalytics/Pods-rnfirebaseanalytics.release.xcconfig"; sourceTree = "<group>"; };
 		8DFA5C171DA443EBFFE06881 /* Pods-rnfirebaseanalyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfirebaseanalyticsTests.debug.xcconfig"; path = "Target Support Files/Pods-rnfirebaseanalyticsTests/Pods-rnfirebaseanalyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		90CC6D8FB8FFBE89B8542740 /* Pods-rnfirebaseanalytics-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfirebaseanalytics-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-rnfirebaseanalytics-tvOSTests/Pods-rnfirebaseanalytics-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		995BAAF522EEECFE0078E7D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF85BBCB31F4D565DFDDC5BD /* Pods-rnfirebaseanalytics-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfirebaseanalytics-tvOS.release.xcconfig"; path = "Target Support Files/Pods-rnfirebaseanalytics-tvOS/Pods-rnfirebaseanalytics-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		C01FB5317AF51DAC00AE3ED9 /* libPods-rnfirebaseanalyticsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnfirebaseanalyticsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C339F70E9B6E4FB2B278E2 /* Pods-rnfirebaseanalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfirebaseanalyticsTests.release.xcconfig"; path = "Target Support Files/Pods-rnfirebaseanalyticsTests/Pods-rnfirebaseanalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				995BAAF522EEECFE0078E7D7 /* GoogleService-Info.plist */,
 			);
 			name = rnfirebaseanalytics;
 			sourceTree = "<group>";
@@ -161,7 +164,6 @@
 				8DFA5C171DA443EBFFE06881 /* Pods-rnfirebaseanalyticsTests.debug.xcconfig */,
 				C4C339F70E9B6E4FB2B278E2 /* Pods-rnfirebaseanalyticsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +310,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,6 +341,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				995BAAF622EEECFE0078E7D7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
