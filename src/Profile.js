@@ -1,7 +1,27 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import firebase from 'react-native-firebase';
 
 class Profile extends Component {
+  componentDidMount() {
+    const { navigation } = this.props;
+    const didFocusSubscription = navigation.addListener(
+      'didFocus',
+      (payload) => {
+        console.log('didFocus', payload);
+        firebase.analytics().logEvent('OPEN_PROFILE_PAGE', { name: 'chowyunfatt' });
+      },
+    );
+
+    const didBlurSubscription = navigation.addListener(
+      'didBlur',
+      (payload) => {
+        console.log('didBlur', payload);
+        firebase.analytics().logEvent('LEFT_PROFILE_PAGE', { name: 'chowyunfatt' });
+      },
+    );
+  }
+
   render() {
     return (
       <View style={styles.main}>

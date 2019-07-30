@@ -5,24 +5,11 @@ import firebase from 'react-native-firebase';
 class Home extends Component {
   componentDidMount() {
     const { navigation } = this.props;
-    const willFocusSubscription = navigation.addListener(
-      'willFocus',
-      (payload) => {
-        console.log('willFocus', payload);
-      },
-    );
-
     const didFocusSubscription = navigation.addListener(
       'didFocus',
       (payload) => {
         console.log('didFocus', payload);
-      },
-    );
-
-    const willBlurSubscription = navigation.addListener(
-      'willBlur',
-      (payload) => {
-        console.log('willBlur', payload);
+        firebase.analytics().logEvent('OPEN_HOME_PAGE', { name: 'chowyunfatt' });
       },
     );
 
@@ -30,6 +17,7 @@ class Home extends Component {
       'didBlur',
       (payload) => {
         console.log('didBlur', payload);
+        firebase.analytics().logEvent('LEFT_HOME_PAGE', { name: 'chowyunfatt' });
       },
     );
   }
